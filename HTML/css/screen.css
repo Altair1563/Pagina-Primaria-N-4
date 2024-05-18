@@ -140,11 +140,11 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
 	transition: all 0.5s ease-in-out;
 }
 .sf-menu li a:hover { /* visited pseudo selector so IE6 applies text colour*/
-	color:#fff;
+	color:#103ed4;
 }
 li a#visited {
 	border-bottom:3px solid black;
-	color:#ffa049;
+	color:#ef7911;
 }
 /*** submenu ***/
 .sf-menu li ul {
