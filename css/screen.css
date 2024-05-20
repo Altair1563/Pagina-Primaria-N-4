@@ -552,7 +552,7 @@ p.quote {
 }
 /****************************** Footer ******************************/
 .footer {
-	background:#261b0d url(../images/rausch.png) repeat;
+	background:#261b0d;
 	padding:20px 0px;
 }
 .footer p {

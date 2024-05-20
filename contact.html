@@ -3,7 +3,7 @@
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
-<html lang="en">
+<html lang="es">
 <!--<![endif]-->
 <head>
 
@@ -51,16 +51,16 @@
   <div class="container"> 
     <!-- Header | Logo, Menu
 		================================================== -->
-    <div class="logo"><a href="index.html"><img width="200" height="100" src="images/Logo-2-2.png" alt="" /></a></div>
+    <div class="logo"><a href="index.html"><img width="200" height="100" src="images/logo-ok.png" alt="" /></a></div>
     <div class="mainmenu">
       <div id="mainmenu">
         <ul class="sf-menu">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="about.html">Sobre Nosotros</a></li>
-          <li><a href="portfolio.html" id="visited">Proyectos</a></li>
+          <li><a href="portfolio.html">Proyectos</a></li>
           <li><a href="blog.html">Salidas Escolares</a></li>
           <li><a href="features.html">Historia</a></li>
-          <li><a href="contact.html">Contacto</a></li>
+          <li><a href="contact.html"  id="visited">Contacto</a></li>
         </ul>
       </div>
       <!-- mainmenu ends here -->
@@ -90,140 +90,75 @@
 <div class="breadcrumbs">
   <div class="container">
     <header>
-      <h3>Proyectos Escolares</h3>
-      <p>"Nos gustaría presentarte algunos de nuestros destacados proyectos escolares, que abarcan desde iniciativas ecológicas y científicas hasta proyectos artísticos y <br>culturales que enriquecen la experiencia educativa de nuestros estudiantes."</p>
+      <h3>Contactanos</h3>
+      <p>Nos emociona la idea de tener la oportunidad de conversar contigo.</p>
     </header>
   </div>
   <!-- container ends here -->
   <hr class="separator1">
 </div>
 <!-- breadcrumbs ends here --> 
-<!-- Portfolio ==================================================
+<!-- Contact Content Part - GoogleMap ==================================================
 ================================================== -->
-<div class="container portfolio">
-  <div class="one_third shadow">
-    <div class="view view-first"> <img src="images/portfolio/a.jpg" alt="" />
-      <div class="mask">
-        <h2><a href="#">Proyecto X</a></h2>
-      </div>
-      <!-- mask ends here --> 
+<section class="map"> 
+  <!-- google map -->
+  <div class="map-holder">
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2975.182506447506!2d-58.51261539349299!3d-34.90977582073897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd7b442a7c7eb%3A0xd5461ab803ccc9b7!2sEscuela%20Rural%20N%C2%BA%204!5e0!3m2!1sen!2sus!4v1716060175221!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <!-- end google map --> 
     </div>
-    <!-- view ends here --> 
+    <!--map-container ends here--> 
   </div>
-  <!--end one_third-->
-  <div class="one_third shadow">
-    <div class="view view-first"> <img src="images/portfolio/b.jpg" alt="" />
-      <div class="mask">
-        <h2><a href="#">Proyecto X</a></h2>
-      </div>
-      <!-- mask ends here --> 
+  <!--map-holder ends here--> 
+</section>
+
+<!-- Contact Content Part - Contact Form ==================================================
+================================================== -->
+<div class="container contact"> 
+  <!-- Contact Sidebar ==================================================
+================================================== -->
+  <div class="one_third">
+    <h3>Nuestra Información</h3>
+    <section class="first shadow">
+      <ul>
+        <li>123456 Street Name, London</li>
+        <li>Teleono: (1800) 987-12341</li>
+        <li>Website: <a href="#" title="">http://yoursitename.com</a></li>
+        <li>Email: <a href="#" title="">info@freebix.com</a></li>
+      </ul>
+    </section>
+  </div>
+  <!-- one_third ends here -->
+  <div class="two_third lastcolumn contact1">
+    <div id="contactForm">
+      <h3>Contactanos</h3>
+      <div class="sepContainer"></div>
+      <form action="process.php" method="post" id="contact_form">
+        <div class="name">
+          <label for="name">Nombre:</label>
+          <p> Por favor ingresar nombre completo</p>
+          <input id=name name=email type=text placeholder="e.g. Mr. John Smith" required />
+        </div>
+        <div class="email">
+          <label for="email">Tú Email:</label>
+          <p> Por favor ingresar dirección de correo electronico</p>
+          <input id=email name=email type=email placeholder="example@domain.com" required />
+        </div>
+        <div class="message">
+          <label for="message">Mensaje:</label>
+          <p> Por favor ingresar tu mensaje aqui!</p>
+          <textarea id=message name=message rows=6 cols=10 required></textarea>
+        </div>
+        <div id="loader">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
     </div>
-    <!-- view ends here --> 
+    <!-- end contactForm --> 
   </div>
-  <!--end one_third-->
-  <div class="one_third lastcolumn shadow">
-    <div class="view view-first"> <img src="images/portfolio/c.jpg" alt="" />
-      <div class="mask">
-        <h2><a href="#">Proyecto X</a></h2>
-      </div>
-      <!-- mask ends here --> 
-    </div>
-    <!-- view ends here --> 
-  </div>
-  <!--end one_third-->
-  <div class="one_third shadow">
-    <div class="view view-first"> <img src="images/portfolio/b.jpg" alt="" />
-      <div class="mask">
-        <h2><a href="#">Proyecto X</a></h2>
-      </div>
-      <!-- mask ends here --> 
-    </div>
-    <!-- view ends here --> 
-  </div>
-  <!--end one_third-->
-  <div class="one_third shadow">
-    <div class="view view-first"> <img src="images/portfolio/c.jpg" alt="" />
-      <div class="mask">
-        <h2><a href="#">Proyecto X</a></h2>
-      </div>
-      <!-- mask ends here --> 
-    </div>
-    <!-- view ends here --> 
-  </div>
-  <!--end one_third-->
-  <div class="one_third lastcolumn shadow">
-    <div class="view view-first"> <img src="images/portfolio/a.jpg" alt="" />
-      <div class="mask">
-        <h2><a href="#">Proyecto X</a></h2>
-      </div>
-      <!-- mask ends here --> 
-    </div>
-    <!-- view ends here --> 
-  </div>
-  <!--end one_third-->
-  
-  <div class="one_third shadow">
-    <div class="view view-first"> <img src="images/portfolio/c.jpg" alt="" />
-      <div class="mask">
-        <h2><a href="#">Proyecto X</a></h2>
-      </div>
-      <!-- mask ends here --> 
-    </div>
-    <!-- view ends here --> 
-  </div>
-  <!--end one_third-->
-  <div class="one_third shadow">
-    <div class="view view-first"> <img src="images/portfolio/a.jpg" alt="" />
-      <div class="mask">
-        <h2><a href="#">Proyecto X</a></h2>
-      </div>
-      <!-- mask ends here --> 
-    </div>
-    <!-- view ends here --> 
-  </div>
-  <!--end one_third-->
-  <div class="one_third lastcolumn shadow">
-    <div class="view view-first"> <img src="images/portfolio/b.jpg" alt="" />
-      <div class="mask">
-        <h2><a href="#">Proyecto X</a></h2>
-      </div>
-      <!-- mask ends here --> 
-    </div>
-    <!-- view ends here --> 
-  </div>
-  <!--end one_third-->
-  <div class="one_third shadow">
-    <div class="view view-first"> <img src="images/portfolio/a.jpg" alt="" />
-      <div class="mask">
-        <h2><a href="#">Proyecto X</a></h2>
-      </div>
-      <!-- mask ends here --> 
-    </div>
-    <!-- view ends here --> 
-  </div>
-  <!--end one_third-->
-  <div class="one_third shadow">
-    <div class="view view-first"> <img src="images/portfolio/b.jpg" alt="" />
-      <div class="mask">
-        <h2><a href="#">Proyecto X</a></h2>
-      </div>
-      <!-- mask ends here --> 
-    </div>
-    <!-- view ends here --> 
-  </div>
-  <!--end one_third-->
-  <div class="one_third lastcolumn shadow">
-    <div class="view view-first"> <img src="images/portfolio/c.jpg" alt="" />
-      <div class="mask">
-        <h2><a href="#">Proyecto X</a></h2>
-      </div>
-      <!-- mask ends here --> 
-    </div>
-    <!-- view ends here --> 
-  </div>
-  <!--end one_third--> 
 </div>
-<!-- container ends here --> 
+<div class="blankSeparator"></div>
+
 <!-- Socialize ==================================================
 ================================================== -->
 <hr class="separator2">
