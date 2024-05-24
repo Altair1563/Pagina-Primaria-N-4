@@ -65,22 +65,35 @@
 	//##########################################
 	// Accordion box
 	//##########################################
-	  $(document).ready(function(){ 
-	$('.accordion-container').hide(); 
-	$('.accordion-trigger:first').addClass('active').next().show();
-	$('.accordion-trigger').click(function(){
-		if( $(this).next().is(':hidden') ) { 
-			$('.accordion-trigger').removeClass('active').next().slideUp();
-			$(this).toggleClass('active').next().slideDown();
-		}
-		return false;
-	});
-	});
+	$(document).ready(function(){ 
+    $('.accordion-container').hide(); // Oculta los contenidos del acordeón por defecto
+    $('.accordion-trigger').addClass('closed'); // Agrega una clase para indicar que el acordeón está cerrado
 
+    $('.accordion-trigger').click(function(){
+        if( $(this).next().is(':hidden') ) { 
+            $('.accordion-trigger').removeClass('active').removeClass('closed').next().slideUp(); // Cierra los elementos abiertos
+            $(this).toggleClass('active').next().slideDown(); // Abre el elemento clickeado
+        } else {
+            $(this).removeClass('active').next().slideUp(); // Cierra el elemento si ya está abierto
+        }
+        return false;
+    });
+});
 
-		
+	//##########################################
+	// Accordion box Footer
+	//##########################################
+	$(document).ready(function(){ 
+    $('.accordion-container-footer').hide(); // Oculta los contenidos del acordeón del footer por defecto
+    $('.accordion-trigger-footer').addClass('closed'); // Agrega una clase para indicar que el acordeón del footer está cerrado
 
-
-  
-	
-
+    $('.accordion-trigger-footer').click(function(){
+        if( $(this).next().is(':hidden') ) { 
+            $('.accordion-trigger-footer').removeClass('active').removeClass('closed').next().slideUp(); // Cierra los elementos abiertos del footer
+            $(this).toggleClass('active').next().slideDown(); // Abre el elemento clickeado del footer
+        } else {
+            $(this).removeClass('active').next().slideUp(); // Cierra el elemento si ya está abierto del footer
+        }
+        return false;
+    });
+});

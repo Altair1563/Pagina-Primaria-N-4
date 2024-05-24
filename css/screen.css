@@ -552,75 +552,115 @@ p.quote {
 }
 /****************************** Footer ******************************/
 .footer {
-	background:#261b0d;
-	padding:20px 0px;
+    background: #261b0d;
+    padding: 20px 0;
 }
+
 .footer p {
-	color:#f9efe3;
-	text-shadow:none;
-	font-size:12px;
+    color: #f9efe3;
+    font-size: 12px;
+    text-shadow: none;
 }
+
+.accordion-trigger-footer {
+    text-decoration: none;
+    padding: 3px 0;
+    background: url(../images/toggle.png) no-repeat right 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.accordion-trigger-footer h3 {
+    text-transform: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.accordion-trigger-footer.active {
+    background: url(../images/toggle.png) no-repeat right -80px;
+}
+
+.accordion-trigger-footer:hover {
+    background: url(../images/toggle.png) no-repeat right 5px;
+}
+
+.accordion-trigger-footer.active:hover {
+    background: url(../images/toggle.png) no-repeat right -80px;
+}
+
+.accordion-container-footer {
+    margin-bottom: 0;
+    padding: 0 0 20px 0;
+}
+
+.accordion-container-footer a.buttonhome {
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
 .footer h3 {
-	color:#f07272;
-	font-size:16px;
+    color: #f07272;
+    font-size: 16px;
 }
+
 #tweets ul {
-	margin-top:10px;
+    margin-top: 10px;
 }
+
 #tweets li {
-	line-height: 1.5em;
-	color:#efefef;
-	font-family:  Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    color: #efefef;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 #tweets li a {
-	color:#f9efe3;
+    color: #f9efe3;
 }
+
 #tweets p.meta {
-	color:#f07272;
-	margin-top:10px;
+    color: #f07272;
+    margin-top: 10px;
 }
+
 #tweets li.tweet_content_0 {
-	border-top:0px none;
+    border-top: 0 none;
 }
+
 #tweets li:last-child {
-	border-bottom:0px none;
+    border-bottom: 0 none;
 }
-#tweets .hash {
-	color:#f9efe3;
+
+#tweets .hash, #tweets .reply {
+    color: #f9efe3;
 }
-#tweets .reply {
-	color:#f9efe3;
+
+.footer ul {
+    list-style: none;
+    padding: 0;
 }
+
 .footer ul li {
-	padding:2px 0;
+    padding: 2px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-.footer ul li:last-child {
-	border-bottom:none;
-}
+
 ul.socials li {
-	display: inline-block;
-	padding:5px;
-	background:#261b0d url(../images/rausch.png) repeat;
-	border: 1px solid rgba(0, 0, 0, 0.3) inset;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	-moz-box-shadow: 0 0 18px rgba(0, 0, 0, 0.3) inset;
-	-webkit-box-shadow: 0 0 18px rgba(0, 0, 0, 0.3) inset;
-	box-shadow: 0 0 18px rgba(0, 0, 0, 0.3) inset;
+    display: inline-block;
+    padding: 5px;
+    background: #261b0d url(../images/rausch.png) repeat;
+    border: 1px solid rgba(0, 0, 0, 0.3) inset;
+    border-radius: 5px;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.3) inset;
 }
+
 .footer ul li a {
-	color:#f9efe3;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-	cursor:pointer;
+    color: #f9efe3;
+    transition: all 0.3s ease;
 }
+
 .footer ul li a:hover {
-	color:#f07272;
-	padding-left:5px;
+    color: #f07272;
+    padding-left: 5px;
 }
 /****************************** Copyright ******************************/
 #copyright {
