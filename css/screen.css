@@ -1280,6 +1280,12 @@ form#contact_form input[type="submit"] {
 	margin-bottom: 10px;
 	float: left;
 }
+
+.logo-left {
+	position: relative;
+	left: 25%;
+}
+
 .one_sixth {
 	margin-right: 2%;
 	margin-bottom:20px;
