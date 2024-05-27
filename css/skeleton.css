@@ -278,7 +278,16 @@ padding-left: 720px;
 
     @media only screen and (max-width: 767px) {
  .container {
-width: 300px;
+	width: 300px;
+	}
+
+	.logo{
+	position: relative;
+	left: 20%;
+	}
+
+	.logo-left{
+	display: contents;
 }
  .column, .columns {
 float: left;
